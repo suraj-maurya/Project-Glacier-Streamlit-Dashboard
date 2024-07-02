@@ -97,7 +97,7 @@ def drawDashboard():
     st.subheader(body="Current Status", anchor=False)
     cols = st.columns(2, gap="medium")
     with cols[0]:
-        st.metric(label="Room Temperature", value=str(st.session_state.current_room_temp) + "°C"")
+        st.metric(label="Room Temperature", value=str(st.session_state.current_room_temp) + "°C")
     with cols[1]:
         st.metric(label="Coil Temperature", value=str(st.session_state.current_coil_temp) + "  °C")
     # with cols[2]:
