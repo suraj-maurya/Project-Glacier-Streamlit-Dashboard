@@ -189,7 +189,7 @@ def drawDashboard():
                 y=alt.Y(
                     "aggregate:Q",
                     # scale=alt.Scale(domain=[0, 100]),
-                    scale=alt.Scale(zero=False, domain=[-20, 50]),
+                    scale=alt.Scale(zero=False, domain=[-20, 80]),
                     axis=alt.Axis(title="Temperature (°C)", grid=True, tickCount=10),
                 ),  # Q indicates quantitative data
                 tooltip=[alt.Tooltip('Datetime:T', format="%Y-%m-%d %H:%M:%S", title="Time",),
